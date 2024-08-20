@@ -1,0 +1,105 @@
+class MageOfAddition:
+    def add(self, a, b):
+        return a + b
+
+class WarriorOfSubtraction:
+    def subtract(self, a, b):
+        return a - b
+
+class RangerOfMultiplication:
+    def multiply(self, a, b):
+        return a * b
+
+class ClericOfDivision:
+    def divide(self, a, b):
+        if b != 0:
+            return a / b
+        else:
+            return "Divisão por zero não permitida!"
+        
+
+
+mage = MageOfAddition()
+warrior = WarriorOfSubtraction()
+ranger = RangerOfMultiplication()
+cleric = ClericOfDivision()
+
+def formula1():
+
+    variaveis = {
+    "mage": mage,
+    "warrior": warrior,
+    "ranger": ranger,
+    "cleric": cleric
+}
+
+x1,x2,x3,x4,x5 =10,5,4,2,3
+   
+resultado = (mage.add(x1, x2))
+r2 = ranger.multiply(resultado, x3)
+r3 = cleric.divide(r2, x4)
+r4 =warrior.subtract(r3, x5)
+
+print(f"Resultado:{r4}" )
+
+def formula2():
+    variaveis = {
+    "mage": mage,
+    "warrior": warrior,
+    "ranger": ranger,
+    "cleric": cleric
+    }
+
+
+x1,x2,x3,x4,x5 = 8,3,7,5,2
+
+r1 = (ranger.multiply(x1, x2))
+r2 = (mage.add(r1,x3))
+r3 = (cleric.divide(r2, x4))
+r4 = (warrior.subtract(r3,x5))
+
+print(f"Resultado:{r4}")
+
+def formula3():
+    variaveis = {
+    "mage": mage,
+    "warrior": warrior,
+    "ranger": ranger,
+    "cleric": cleric
+    }
+
+x1,x2,x3,x4,x5 = 25,5,4,6,10
+
+r1 = (warrior.subtract(x1, x2))
+r2 = (cleric.divide(r1,x3))
+r3 = (ranger.multiply(r2, x4))
+r4 = (mage.add(r3, x5))
+
+print(f"Resultado:{r4}")
+
+def formula4():
+    variaveis = {
+    "mage": mage,
+    "warrior": warrior,
+    "ranger": ranger,
+    "cleric": cleric
+    }
+
+x1,x2,x3,x4,x5 = 9,2,4,3,5
+
+r1 = (mage.add(x2,x3))
+r2 = (ranger.multiply(r1,x1))
+r3 = (cleric.divide(r2,x4))
+r4 = (warrior.subtract(r3,x5))
+
+print(f"resultado:{r4}")
+
+
+
+
+
+
+
+
+
+    
